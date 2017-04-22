@@ -7,7 +7,7 @@ import {
     TextInput,
     TouchableHighlight,
 } from 'react-native';
-import Todo from "./src/app/Todo.js";
+import Todo from "./src/app/Todo";
 // export default class Todo extends Component {
 //     constructor() {
 //         super();
