@@ -57,6 +57,7 @@ export default class Todo extends Component {
         return (
             <View style={styles.mainContainer}>
                 <View style={styles.inputContainer}>
+                    <Text>Todo APP</Text>
                     <TextInput value={this.state.text} onChangeText={this.handleChange} style={styles.input}/>
                     <TouchableOpacity onPress={this.handlePress} style={styles.add}>
                         <Text>ADD</Text>
