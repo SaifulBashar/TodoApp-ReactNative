@@ -1,30 +1,25 @@
 import {StyleSheet} from 'react-native';
 const styles = StyleSheet.create({
     mainContainer: {
-        flex:1,
-        borderColor: 'black',
-        borderWidth : 2,
-        backgroundColor: 'white'
+        marginTop:20,
+        backgroundColor:'black',
+        flex:1
     },
     inputContainer: {
-        borderColor: 'black',
-        borderWidth : 2,
         padding:50,
         flex: 0,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: 'white'
+        backgroundColor:'#494C4F'
+        
     },
     listContainer: {
-        borderColor: 'black',
-        borderWidth : 2,
         padding:20,
         flex: 1,
-        // justifyContent: 'center',
-        // alignItems: 'center',
-        // backgroundColor: 'white'
+        backgroundColor:'#2F3032'
     },
     input:{
+        backgroundColor:"white",
         borderColor: 'black',
         borderWidth : 2,
         height:40,
@@ -32,13 +27,15 @@ const styles = StyleSheet.create({
         borderRadius:5
     },
     add:{
-
-        marginTop:2,
+        width:270,
+        marginTop:10,
         borderColor: 'black',
         borderWidth : 2,
         height:40,
         padding:10,
-        borderRadius:5
+        borderRadius:5,
+        alignItems:'center',
+        backgroundColor:'#581845'
     },
     listText:{
         flex:1,
@@ -47,7 +44,9 @@ const styles = StyleSheet.create({
         borderWidth : 2,
         height:40,
         padding:10,
-        borderRadius:5
+        backgroundColor:'white'
+        
+    
     },
     del:{
 
@@ -56,7 +55,7 @@ const styles = StyleSheet.create({
         borderWidth : 2,
         height:40,
         padding:10,
-        borderRadius:5
+        backgroundColor:'white'
     }
 });
 export default styles;
