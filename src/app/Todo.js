@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import { TodoInput } from './TodoInput';
 import {connect} from 'react-redux';
+import { AsyncStorage } from 'react-native';
 import {
   AppRegistry,
   StyleSheet,
@@ -18,12 +19,11 @@ const add = (<Icon name="address" size={20} />);
 
 
 class _Todo extends Component {
-  // static defaultProps = {
-  //   todos: []
-  // }
+
   constructor(props) {
     super(props);
-    this.count=0;
+    
+    this.count=0;//key for list item
     this.state = {
       newTodo: ''
     }
@@ -36,9 +36,14 @@ class _Todo extends Component {
   }
 
   handlePress() {
+    //if text input is empty
+    if(this.state.newTodo === ''){
+      return;
+    }
     this.props.createTodo(this.state.newTodo);
     this.setState({newTodo: ''});
   }
+  
   deleteTask(task){
     this.props.deleteTodo(task,this.props.todos);
   }

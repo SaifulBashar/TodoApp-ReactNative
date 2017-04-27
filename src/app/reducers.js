@@ -1,13 +1,18 @@
 import { combineReducers } from 'redux';
-
+//type name
 const CREATE_TODO = 'CREATE_TODO';
 const DELETE_TODO = 'DELETE_TODO';
+
 const user =(state={},action)=>{
   return state;
 }
-const todos = (state = [], action) => {
+
+
+
+const todos = (state =[], action) => {
   switch (action.type) {
     case CREATE_TODO:
+
       return [
         action.payload,
         ...state
