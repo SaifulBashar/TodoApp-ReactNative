@@ -24,7 +24,8 @@ const styles = StyleSheet.create({
         borderWidth : 2,
         height:40,
         padding:10,
-        borderRadius:5
+        borderRadius:5,
+        width:270
     },
     add:{
         width:270,
