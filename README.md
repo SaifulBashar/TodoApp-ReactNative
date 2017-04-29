@@ -1,3 +1,3 @@
 # TodoApp-ReactNative
 
-React native app for ios. 
+React native app for ios and android.
