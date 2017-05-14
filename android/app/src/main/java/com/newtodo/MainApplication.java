@@ -1,4 +1,4 @@
-package com.todo;
+package com.newtodo;
 
 import android.app.Application;
 

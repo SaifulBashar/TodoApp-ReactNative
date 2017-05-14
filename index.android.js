@@ -1,15 +1,7 @@
 import React, { Component } from 'react';
-import {Provider} from 'react-redux';
-import {store} from './src/app/store';
 import {
-    AppRegistry,
-    StyleSheet,
-    Text,
-    View,
-    TextInput,
-    TouchableHighlight,
+  AppRegistry
 } from 'react-native';
-import {Todo} from "./src/app/Todo";
+import {App} from './src/App';
 
-const Main = ()=> (<Provider store={store}><Todo/></Provider>)
-AppRegistry.registerComponent('Todo', () => Main);
+AppRegistry.registerComponent('newtodo', () => App);
